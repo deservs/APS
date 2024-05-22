@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.topbar{  
+    background-color: #00A627;
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+.topbar img{
+    position: absolute;
+    display: block;
+    top: 4.3%;
+    left: 2%;
+    height: 8%;
+}
+.topbar2 {
+    background-color:rgba(56, 56, 56, 79%);
+    height: 7vh;
+    display: block;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+}
+.topbar2 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 5%;
+    padding-top: 1%;
+    font-weight: 800;
+}
