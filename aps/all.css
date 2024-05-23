@@ -3,31 +3,81 @@
     margin: 0;
     box-sizing: border-box;
 }
-.topbar{  
+.all{
+    position: fixed;
+    background-color: #575757;
+    height: 16vh;
+    width: 100%;
+}
+.topbar{
+    position: fixed;  
     background-color: #00A627;
     height: 10vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: bottom left;
+    top: 0;
+    left: 0;
 }
-.topbar img{
+.logo{
+    z-index: 10;
+    top: 3.4vh;
     position: absolute;
-    display: block;
-    top: 4.3%;
     left: 2%;
-    height: 8%;
+    height: 8vh;
+}
+.pesquisa{
+    margin-left: 140vh;
+    background-color: grey;
+    height: 5vh;
+    width: 40vh;
+    position: fixed;
+    top: 2vh;
+    position: relative;
+    outline: none;
+}
+.pesquisa input{
+    background: transparent;
+    margin-left: 10%;
+    height: 100%;
+    outline: none;
+    color: white;
+    font-size: 3vh;
+    border: none;
+    font-family: barlow;
+}
+.pesquisa label{
+    position: absolute;
+    top: 0;
+    left: 9.7vh;
+    font-size: 30px;
+    color: white;
+    transition: .5;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-family: barlow;
 }
 .topbar2 {
+    position: fixed;
     background-color:rgba(56, 56, 56, 79%);
     height: 7vh;
+    width: 100%;
     display: block;
     justify-content: center;
     flex-direction: row;
     display: flex;
+    top: 9vh;
 }
 .topbar2 a{
     text-decoration: none;
     color: white;
-    margin-left: 5%;
+    margin-right: 6%;
+    margin-left: 7%;
     padding-top: 1%;
-    font-weight: 800;
+    font-family: barlow;
+    font-weight: 500;
+    font-size: 2.5vh;
+}
+.l {
+    height: 1000vh
 }
