@@ -1,59 +1,126 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: barlow, sans-serif;
+    
 }
-.login{
-    position: fixed;
-    left: 25%;
-    right: 25%;
-}
+
 body {
     text-align: center;
     margin: 0;
     padding: 0;
-
-    background: linear-gradient(to bottom, #000B03,#000B03, #00A627);
+    background: linear-gradient(to bottom, #000000, #000B03, #00A627);
     height: 100vh;
 }
-body img{
+
+.login-box img {
     align-items: center;
-    margin-top: 10%;
+    margin-top: 23vh;
+    height: 25%;
+    width: 16%;
 }
-.user-box{
+
+.user-box {
+    left: 40%;
     display: block;
     width: 40vh;
     height: 5vh;
     background-color: #d9d9d9;
-    margin-left: 80vh;
     border-radius: 100px;
     margin-top: 2%;
+    padding-right: 5.2vh;
     position: relative;
 }
-.login-box a{
+
+.login-box a {
+    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 5vh;
     font-weight: 550;
     box-sizing: border-box;
-    
+    margin-top: 2%;
 }
-.user-box input{
-    font-size: 2vh;
-    border: none;
-    background-color: transparent;
-    margin-top: 2.5%;
-    outline: none;
-}
-.user-box label{
+
+.login-box .user-box input {
     position: absolute;
-    top: 0;
-    left: 0;
+    width: 85%;
+    font-size: 3vh;
+    border: none;
+    background: transparent;
+    outline: none;
+    margin-top: .6vh;
+    margin-left: -15vh;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    width: 100%;
     color: #676767;
     pointer-events: none;
     transition: .5;
-    margin-left: 10vh;
     margin-top: 1.2vh;
+    font-size: 2.5vh;
     text-align: center;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.confirm {
+    height: 17%;
+    width: 8%;
+    right: 2%;
+    position: fixed;
+}
+
+@media screen and (max-width: 1024px){
+    .user-box{
+        left: 24%;
+        margin-top: 5%;
+    }
+    .login-box img{
+        height: 45%;
+        width: 40%;
+    }
+    .confirm {
+        height: 10%;
+        width: 13%;
+        bottom: 10%;
+    }
+    .login-box .user-box label{
+        margin-left: 0;
+    }
+    .login-box .user-box input{
+        width: 85%;
+    }
+}
+@media screen and (max-width: 430px) {
+    .user-box{
+        left: 20%;
+        width: 30vh;
+    }
+    .login-box .user-box label {
+        font-size: 2.3vh;
+        margin-left: 0;
+    }
+    .login-box .user-box input {
+        font-size: 3vh;
+        margin-left: -10vh;
+        width: 85%;
+    }
+    .login-box a{
+        font-size: 3vh;
+        margin-top: 2vh;
+    }
+    .confirm{
+        width: 20%;
+        height: 10%;
+    }
+    
 }
